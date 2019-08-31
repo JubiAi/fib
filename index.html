@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="scripts.js"></script>
+    <title>Fibonacci</title>
+</head>
+<body>
+    <h1>Program to find n<sup>th</sup> fibonacci number</h1>
+    <h3>Recursion</h3>
+    <script>
+        var start = performance.now();
+        fib_rec(35);
+        var elapsed =  performance.now() - start;
+        document.write('time taken is ' + elapsed + 'ms.');
+    </script>
+    <h3>Memoization</h3>
+    <script>
+        var start = performance.now();
+        fib_dyn(35);
+        var elapsed =  performance.now() - start;
+        document.write('time taken is ' + elapsed + 'ms.');
+    </script>
+    <h3>Fibonacci series for n = 35</h3>
+    <script>
+        fib_series(35);
+    </script>
+</body>
+</html>
